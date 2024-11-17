@@ -12,7 +12,7 @@ public class IdleState : State
     }
     public override void Enter(){
         base.Enter();
-        Debug.Log("Стоит");
+        //Debug.Log("Стоит");
     }
 
     public override void Update(){
@@ -22,6 +22,6 @@ public class IdleState : State
 
     public override void Exit(){
         base.Exit();
-        Debug.Log("Не стоит");
+        //Debug.Log("Не стоит");
     }
 }

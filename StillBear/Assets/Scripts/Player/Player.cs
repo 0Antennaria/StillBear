@@ -1,7 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    public bool IsInTrigger = false;
+    [SerializeField] Canvas pasekaMenu;
+
     [SerializeField] private float speed;
     private StateMachine stateMachine;
     private Rigidbody rigidbody;
@@ -34,5 +38,22 @@ public class Player : MonoBehaviour
 
     public Vector3 getMovement(){
         return movement;
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag != "paseka")
+        { return; }
+        IsInTrigger = true;
+        if(Input.GetKeyDown(KeyCode.E) && !pasekaMenu.gameObject.activeSelf)
+        {
+            Debug.Log("menu appears");
+            pasekaMenu.gameObject.SetActive(true);
+        }
+        else if (Input.GetKeyDown(KeyCode.E) && pasekaMenu.gameObject.activeSelf)
+        {
+            pasekaMenu.gameObject.SetActive(false);
+            Debug.Log("menu disappears");
+        }
     }
 }

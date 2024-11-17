@@ -12,7 +12,7 @@ public class RunState : State
     }
     public override void Enter(){
         base.Enter();
-        Debug.Log("Начал бежать");
+        //Debug.Log("Начал бежать");
     }
 
     public override void Update(){
@@ -22,6 +22,6 @@ public class RunState : State
 
     public override void Exit(){
         base.Exit();
-        Debug.Log("Не бежит");
+        //Debug.Log("Не бежит");
     }
 }
