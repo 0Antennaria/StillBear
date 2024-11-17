@@ -11,11 +11,9 @@ public class CharacterInputController : MonoBehaviour
     private void Awake()
     {
         _playerInput = new InputSystemController();
-        _playerInput.Player.Fight.performed += context => Fight();
 
         _playerInput.Enable();
     }
-
 
     private void OnDisable()
     {
@@ -33,10 +31,5 @@ public class CharacterInputController : MonoBehaviour
     {
         Debug.Log(direction);
         transform.Translate(_direction * _moveSpeed * Time.deltaTime);
-    }
-
-    private void Fight()
-    {
-        Debug.Log("Fight!");
     }
 }
