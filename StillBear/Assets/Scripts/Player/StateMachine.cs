@@ -14,7 +14,7 @@ public class StateMachine
     }
 
     public void ChangeState(State newState){
-        if (newState.getStateName() != currentState.getStateName()){
+        if (newState != currentState){
             currentState.Exit();
             currentState = newState;
             currentState.Enter();
