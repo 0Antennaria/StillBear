@@ -22,7 +22,7 @@ public class FightController : MonoBehaviour
 
     private void Cooldown()
     {
-        if (Time.time >= _lastFightTime + weapon.GetCooldown())
+        if (Time.time >= _lastFightTime + weapon.FightCooldown)
         {
             weapon.Fight();
             _lastFightTime = Time.time;
