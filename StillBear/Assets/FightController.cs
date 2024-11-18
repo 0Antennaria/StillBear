@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class FightController : MonoBehaviour
 {
-    [SerializeField] [Range(0.1f, 10)] private float _fightCooldown;
+    [SerializeField] private Weapon weapon;
     private float _lastFightTime = -Mathf.Infinity;
     private InputSystemController _playerInput;
 
@@ -22,19 +22,14 @@ public class FightController : MonoBehaviour
 
     private void Cooldown()
     {
-        if (Time.time >= _lastFightTime + _fightCooldown)
+        if (Time.time >= _lastFightTime + weapon.GetCooldown())
         {
-            Fight();
+            weapon.Fight();
             _lastFightTime = Time.time;
         }
         else
         {
             Debug.Log("Cooldown");
         }
-    }
-
-    private void Fight()
-    {
-        Debug.Log("Fight!");
     }
 }

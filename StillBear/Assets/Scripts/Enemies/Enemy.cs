@@ -4,8 +4,9 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] private float _health;
 
-    private void TakeDamage(float damage)
+    public void TakeDamage(float damage)
     {
+        _health -= damage;
         if (_health <= 0)
         {
             Die();
