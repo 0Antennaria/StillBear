@@ -9,6 +9,6 @@ public class ApairModel : Model
     public void UpgradeApairProfit()
     { 
         ++profitLevel;
-        _view.DisplayProfitLevel(profitLevel);
+        //_view.DisplayProfitLevel(profitLevel);
     }
 }
