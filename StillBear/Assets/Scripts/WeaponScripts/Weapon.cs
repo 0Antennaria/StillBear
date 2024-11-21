@@ -5,8 +5,8 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField] protected float _damage;
     [SerializeField] [Range(0.1f, 10)] protected float _fightCooldown;
     [SerializeField] protected Transform AttackPoint;
-    [SerializeField] protected float _attackRange;
-    [SerializeField] protected LayerMask _enemyLayer;
+    [SerializeField] protected float  AttackSize;
+    [SerializeField] protected LayerMask EnemyLayer;
 
     public float FightCooldown => _fightCooldown;
 
@@ -18,6 +18,6 @@ public abstract class Weapon : MonoBehaviour
             return;
 
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(this.AttackPoint.position, this._attackRange);
+        Gizmos.DrawWireSphere(AttackPoint.position, AttackSize);
     }
 }
