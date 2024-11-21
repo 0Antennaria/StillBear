@@ -133,9 +133,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 5
-  _fightCooldown: 0.5
-  _attackPoint: {fileID: 3189988021082965059}
-  _attackRange: 0.5
+  _fightCooldown: 0.1
+  AttackPoint: {fileID: 3189988021082965059}
+  _attackRange: 0.16
   _enemyLayer:
     serializedVersion: 2
     m_Bits: 64

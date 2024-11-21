@@ -1,20 +1,26 @@
+using System.Collections;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private float _health;
+     private Weapon _weapon;
 
-    public void TakeDamage(float damage)
+    private void Awake()
     {
-        _health -= damage;
-        if (_health <= 0)
-        {
-            Die();
-        }
+        _weapon = GetComponent<Weapon>();
     }
 
-    private void Die()
+    private void Start()
     {
-        Destroy(gameObject);
+        StartCoroutine(FightEveryFiveSeconds());
+    }
+
+    private IEnumerator FightEveryFiveSeconds()
+    {
+        while (true)
+        {
+            _weapon.Fight();
+            yield return new WaitForSeconds(5f);
+        }
     }
 }

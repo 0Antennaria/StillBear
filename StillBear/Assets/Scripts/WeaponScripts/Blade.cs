@@ -7,7 +7,7 @@ public class Blade : Weapon
         Collider[] enemies = Physics.OverlapSphere(this.AttackPoint.position, this._attackRange, this._enemyLayer);
         foreach (var enemy in enemies)
         {
-            enemy.GetComponent<Enemy>().TakeDamage(this._damage);
+            enemy.GetComponent<DamageHandler>().ApplyDamage(this._damage);
         }
         Debug.Log("Fight");
     }
