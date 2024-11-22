@@ -6,7 +6,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private Transform _player;
     private NavMeshAgent _agent;
 
-    private void Start()
+    private void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
     }
@@ -18,6 +18,9 @@ public class EnemyAI : MonoBehaviour
 
     public void Stop()
     {
-        _agent.ResetPath();
+        if (_agent.hasPath)
+        {
+            _agent.ResetPath();
+        }
     }
 }

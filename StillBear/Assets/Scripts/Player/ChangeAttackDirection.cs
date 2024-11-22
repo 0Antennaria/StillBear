@@ -13,11 +13,11 @@ public class ChangeAttackDirection : MonoBehaviour
 
         if (_moveInputX != 0 && _moveInputY == 0)
         {
-            if(_moveInputX == 1)
+            if (_moveInputX == 1)
             {
                 ChangeAngle(180);
             }
-            else if(_moveInputX == -1)
+            else if (_moveInputX == -1)
             {
                 ChangeAngle(0);
             }

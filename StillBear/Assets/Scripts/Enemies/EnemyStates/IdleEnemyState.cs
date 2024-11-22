@@ -8,11 +8,15 @@ public class IdleEnemyState : IState
     {
         this._enemyAI = enemyAI;
     }
+
     public void Enter()
     {
         _enemyAI.Stop();
     }
+
     public void Exit() { }
+
     public void FixedUpdate() { }
+
     public void Update() { }
 }

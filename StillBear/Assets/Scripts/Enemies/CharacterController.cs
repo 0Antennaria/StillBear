@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class CharacterController : MonoBehaviour, IDamagable
@@ -15,14 +16,34 @@ public class CharacterController : MonoBehaviour, IDamagable
 
     public void TakeDamage(float damage)
     {
-        _health -= damage;
-        if (_health < 0) _health = 0;
+        if (damage < 0)
+            throw new ArgumentException("Negative Damage");
+
+        float newHealth = _health - damage;
+
+        if (newHealth < 0)
+        {
+            _health = 0;
+            return;
+        }
+
+        _health = newHealth;
     }
 
     public void Heal(float heal)
     {
-        _health += heal;
-        if (_health > _maxHealth) _health = _maxHealth;
+        if (heal < 0)
+            throw new ArgumentException("Negative Heal");
+
+        float newHealth = _health + heal;
+
+        if (newHealth > _maxHealth)
+        {
+            _health = _maxHealth;
+            return;
+        }
+
+        _health = newHealth;
     }
 
     public void Die()
