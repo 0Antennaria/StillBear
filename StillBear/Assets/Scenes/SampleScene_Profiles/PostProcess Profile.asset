@@ -43,7 +43,7 @@ MonoBehaviour:
     value: 1
   toneCurveGamma:
     overrideState: 1
-    value: 1.33
+    value: 1.31
   ldrLut:
     overrideState: 0
     value: {fileID: 0}
@@ -59,7 +59,7 @@ MonoBehaviour:
     value: 15.78
   colorFilter:
     overrideState: 1
-    value: {r: 0.9056604, g: 0.86721253, b: 0.8690434, a: 1}
+    value: {r: 0.9433962, g: 0.86774653, b: 0.8753115, a: 1}
   hueShift:
     overrideState: 0
     value: 0
@@ -71,7 +71,7 @@ MonoBehaviour:
     value: 0
   postExposure:
     overrideState: 1
-    value: 0.92
+    value: 0.9
   contrast:
     overrideState: 1
     value: 5
