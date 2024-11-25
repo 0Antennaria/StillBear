@@ -3,24 +3,26 @@ using UnityEngine;
 
 public class EnemyStateManager : MonoBehaviour
 {
-    private EnemyAI _enemyAI;
-    private EnemyAttack _enemyAttack;
+    [SerializeField] private EnemyAI _enemyAI;
+    [SerializeField] private EnemyAttack _enemyAttack;
 
     private IState _currentState;
     private IState _idleEnemyState;
     private IState _followEnemyState;
     private IState _attackEnemyState;
 
-    private void Awake()
+    private void Start()
     {
-        _enemyAI = GetComponent<EnemyAI>();
-        _enemyAttack = GetComponent<EnemyAttack>();
-
         _idleEnemyState = new IdleEnemyState(_enemyAI);
         _followEnemyState = new FollowEnemyState(_enemyAI);
-        _attackEnemyState = new AttackEnemyState(_enemyAttack);
+        _attackEnemyState = new AttackEnemyState(_enemyAI, _enemyAttack);
 
         Initialize(_idleEnemyState);
+    }
+
+    private void Update()
+    {
+        _currentState.Update();
     }
 
     private void Initialize(IState startState)
@@ -45,6 +47,22 @@ public class EnemyStateManager : MonoBehaviour
         {
             ChangeState(_followEnemyState);
             Debug.Log("Player!");
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        float distance = Vector3.Distance(transform.position, other.transform.position);
+        if (other.tag == "Player")
+        {
+            if (distance <= 2f)
+            {
+                ChangeState(_attackEnemyState);
+            }
+            else
+            {
+                ChangeState(_followEnemyState);
+            }
         }
     }
 

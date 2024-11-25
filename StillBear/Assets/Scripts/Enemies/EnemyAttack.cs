@@ -5,6 +5,8 @@ public class EnemyAttack : MonoBehaviour
 {
      private Weapon _weapon;
 
+    public Weapon Weapon => _weapon;
+
     private void Awake()
     {
         _weapon = GetComponent<Weapon>();

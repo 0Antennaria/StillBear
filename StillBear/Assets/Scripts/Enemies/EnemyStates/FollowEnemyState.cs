@@ -8,13 +8,13 @@ public class FollowEnemyState : IState
     {
         this._enemyAI = enemyAI;
     }
-    public void FixedUpdate() 
+
+    public void Update()
     {
         _enemyAI.Move();
     }
+    public void FixedUpdate() {}
     public void Enter() {}
 
     public void Exit() {}
-
-    public void Update() {}
 }
