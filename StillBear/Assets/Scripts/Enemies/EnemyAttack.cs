@@ -24,6 +24,7 @@ public class EnemyAttack : MonoBehaviour
 
     private IEnumerator FightEveryCoolDown()
     {
+        yield return new WaitForSeconds(_weapon.FightCooldown / 2);
         while (true)
         {
             _weapon.Fight();
