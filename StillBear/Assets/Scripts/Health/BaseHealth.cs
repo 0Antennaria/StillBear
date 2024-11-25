@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour, IDamagable
+public abstract class BaseHealth : MonoBehaviour
 {
     [SerializeField] private float _maxHealth;
     [SerializeField] private float _health;
@@ -46,8 +46,5 @@ public class CharacterController : MonoBehaviour, IDamagable
         _health = newHealth;
     }
 
-    public void Die()
-    {
-        Debug.Log("Charachter died :(");
-    }
+    public abstract void Die();
 }

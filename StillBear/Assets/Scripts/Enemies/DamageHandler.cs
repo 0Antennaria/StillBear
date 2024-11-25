@@ -2,22 +2,22 @@ using UnityEngine;
 
 public class DamageHandler : MonoBehaviour
 {
-    private IDamagable _damagable;
+    private BaseHealth _baseHealth;
     private Weapon _weapon;
 
     private void Awake()
     {
-        _damagable = GetComponent<IDamagable>();
+        _baseHealth = GetComponent<BaseHealth>();
         _weapon = GetComponent<Weapon>();
     }
 
     public void ApplyDamage(float damage)
     {
-        _damagable.TakeDamage(damage);
+        _baseHealth.TakeDamage(damage);
 
-        if (_damagable.Health <= 0)
+        if (_baseHealth.Health <= 0)
         {
-            _damagable.Die();
+            _baseHealth.Die();
         }
     }
 }
