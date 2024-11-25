@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FightController : MonoBehaviour
+public class Fighter : MonoBehaviour
 {
     [SerializeField] private Weapon weapon;
     private float _lastFightTime = -Mathf.Infinity;
