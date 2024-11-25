@@ -3,9 +3,24 @@ using UnityEngine.UI;
 
 public class BeeQueen : MonoBehaviour
 {
-    private float _harvesingSpeed;
-    private float _processingSpeed;
+    //[SerializeField] public float HarvesingSpeed { get; private set; }
+    //[SerializeField] public float ProcessingSpeed { get; private set; }
+    //[SerializeField] public Image _avatar { get; private set; }
+    //[SerializeField] public string _name { get; private set; }
+    //[SerializeField] public string _rarity { get; private set; }
+    //public int index;
+    [SerializeField] private float HarvesingSpeed;
+    [SerializeField] private float ProcessingSpeed;
     [SerializeField] private Image _avatar;
-    private string _name;
-    private string _rarity;
+    [SerializeField] private string _name;
+    [SerializeField] private string _rarity;
+
+    public float ChangeSpeed()
+    {
+        return HarvesingSpeed + ProcessingSpeed;
+    }
+    public Image GetAvatar()
+    {
+        return _avatar;
+    }
 }

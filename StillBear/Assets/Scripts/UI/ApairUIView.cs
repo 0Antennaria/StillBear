@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ public class ApairUIView : View
     [SerializeField] private Text IEnergy;
     [SerializeField] private Text IHarvestingSpeed;
     [SerializeField] private Text IProcessingSpeed;
+    [SerializeField] private Button IBeeQueenAvatar;
 
     public override void DisplayHoney(float honey, float maxHoney)
     {
@@ -30,5 +32,27 @@ public class ApairUIView : View
     {
         IProcessingSpeed.text = "Скорость переработки:" + processingSpeed.ToString();
 
+    }
+
+    public override void DisplayBeeQueen(Sprite beeQueenAvatar)
+    {
+        IBeeQueenAvatar.GetComponent<Image>().sprite = beeQueenAvatar;
+    }
+
+    public override void DisplayBeeQueenChangeMenu(GameObject beeQueenChangeMenu)
+    {
+
+
+        if(beeQueenChangeMenu.activeSelf)
+            beeQueenChangeMenu.SetActive(false);
+        else
+            beeQueenChangeMenu.SetActive(true);
+    }
+
+    public override void DisplayQueensInContent(BeeQueen newQueen, GameObject content, Button buttonPrefab)
+    {
+        Button instance = Instantiate(buttonPrefab, content.transform);
+        instance.GetComponent<Image>().sprite = newQueen.GetAvatar().sprite;
+        //instance.AddComponent<BeeQueen>().index = newQueen.index;
     }
 }
