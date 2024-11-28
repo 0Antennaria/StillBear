@@ -29,12 +29,12 @@ public partial class @InputSystemController: IInputActionCollection2, IDisposabl
             ""actions"": [
                 {
                     ""name"": ""Move"",
-                    ""type"": ""PassThrough"",
+                    ""type"": ""Value"",
                     ""id"": ""bd8007af-7c31-42a0-883a-bdb5592a0c90"",
-                    ""expectedControlType"": ""Vector3"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 },
                 {
                     ""name"": ""Fight"",
@@ -50,7 +50,7 @@ public partial class @InputSystemController: IInputActionCollection2, IDisposabl
                 {
                     ""name"": ""2D Vector"",
                     ""id"": ""82db8064-98eb-4a66-9f34-999f764fa1f0"",
-                    ""path"": ""3DVector"",
+                    ""path"": ""2DVector(mode=1)"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -59,30 +59,8 @@ public partial class @InputSystemController: IInputActionCollection2, IDisposabl
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""left"",
+                    ""name"": ""Up"",
                     ""id"": ""5319f2c5-8ac5-4d98-bfa5-285dca97dda6"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard and mouse"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""d1ac1936-e7d6-4d60-b4be-33c297b3d724"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard and mouse"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""forward"",
-                    ""id"": ""18ab3186-ac1c-41d3-a082-1ae50eb5390f"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -92,9 +70,31 @@ public partial class @InputSystemController: IInputActionCollection2, IDisposabl
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""backward"",
-                    ""id"": ""7bc02794-281a-4d6e-8fff-abfb6c16e593"",
+                    ""name"": ""Down"",
+                    ""id"": ""d1ac1936-e7d6-4d60-b4be-33c297b3d724"",
                     ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard and mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Left"",
+                    ""id"": ""18ab3186-ac1c-41d3-a082-1ae50eb5390f"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard and mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Right"",
+                    ""id"": ""7bc02794-281a-4d6e-8fff-abfb6c16e593"",
+                    ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard and mouse"",

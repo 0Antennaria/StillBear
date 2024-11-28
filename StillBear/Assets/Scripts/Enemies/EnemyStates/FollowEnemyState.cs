@@ -31,7 +31,6 @@ public class FollowEnemyState : IEnemyState
         if (other.tag == "Player")
         {
             _enemyStateMachine.ChangeState(new IdleEnemyState(_enemyStateMachine));
-            Debug.Log("Player Exit");
         }
     }
     public void FixedUpdate() {}

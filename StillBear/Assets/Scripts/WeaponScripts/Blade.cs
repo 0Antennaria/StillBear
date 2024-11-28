@@ -9,6 +9,5 @@ public class Blade : Weapon
         {
             enemy.GetComponent<DamageHandler>().ApplyDamage(this._damage);
         }
-        Debug.Log("Fight");
     }
 }

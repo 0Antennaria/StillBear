@@ -1,20 +1,20 @@
 using UnityEngine;
 
-public class IdleState : State
+public class IdleState : IState
 {
-    private Player player;
+    private StateMachine _stateMachine;
 
-    public IdleState(Player player){
-        this.player = player;
-    }
-    public override void Enter(){
-        //Debug.Log("Стоит");
+    public IdleState(StateMachine stateMachine)
+    {
+        _stateMachine = stateMachine;
     }
 
-    public override void Update(){
-    }
-
-    public override void Exit(){
-        //Debug.Log("Не стоит");
+    public void Enter() { }
+    public void Exit() { }
+    public void FixedUpdate() { }
+    public void Update() 
+    {
+        if (_stateMachine.Reader.KeyboardInput != Vector2.zero)
+            _stateMachine.ChangeState(_stateMachine.RunState);
     }
 }

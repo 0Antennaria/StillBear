@@ -18,7 +18,6 @@ public class IdleEnemyState : IEnemyState
         if (other.tag == "Player")
         {
             _enemyStateMachine.ChangeState(new FollowEnemyState(_enemyStateMachine));
-            Debug.Log("Player!");
         }
     }
 

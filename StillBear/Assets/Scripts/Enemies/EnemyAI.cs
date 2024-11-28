@@ -14,7 +14,6 @@ public class EnemyAI : MonoBehaviour
     public void Move()
     {
         _agent.SetDestination(_player.position);
-        Debug.Log("FFFFF");
     }
 
     public void Stop()
