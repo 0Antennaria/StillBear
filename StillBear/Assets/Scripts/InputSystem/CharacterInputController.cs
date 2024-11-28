@@ -31,7 +31,6 @@ public class CharacterInputController : MonoBehaviour
 
     private void Move(Vector3 direction)
     {
-        Debug.Log(direction);
         PlayRunAnimation(direction);
         transform.Translate(_direction * _moveSpeed * Time.deltaTime);
     }
