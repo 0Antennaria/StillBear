@@ -1,24 +1,39 @@
 using UnityEngine;
 
-public class AttackEnemyState : IState
+public class AttackEnemyState : IEnemyState
 {
-    private EnemyAttack _enemyAttack;
-    private EnemyAI _enemyAI;
+    private EnemyStateMachine _enemyStateMachine;
 
-    public AttackEnemyState(EnemyAI enemyAI, EnemyAttack enemyAttack)
+    public AttackEnemyState(EnemyStateMachine enemyStateMachine)
     {
-        this._enemyAI = enemyAI;
-        this._enemyAttack = enemyAttack;
+        this._enemyStateMachine = enemyStateMachine;
     }
     public void Enter() 
     {
-        _enemyAI.Stop();
-        _enemyAttack.StartAttacking();
+        _enemyStateMachine.EnemyAI.Stop();
+        _enemyStateMachine.EnemyAttack.StartAttacking();
     }
 
     public void Exit() 
     {
-        _enemyAttack.StopAttacking();
+        _enemyStateMachine.EnemyAttack.StopAttacking();
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+
+    }
+
+    public void OnTriggerStay(Collider other)
+    {
+        float distance = Vector3.Distance(_enemyStateMachine.transform.position, other.transform.position);
+        if (other.tag == "Player" && distance > _enemyStateMachine.StopWalking)
+        {
+            _enemyStateMachine.ChangeState(new FollowEnemyState(_enemyStateMachine));
+        }
+    }
+    public void OnTriggerExit(Collider other)
+    {
     }
 
     public void FixedUpdate() {}

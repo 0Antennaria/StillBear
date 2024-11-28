@@ -9,6 +9,7 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField] protected LayerMask EnemyLayer;
 
     public float FightCooldown => _fightCooldown;
+    public float GetAttackSize => AttackSize;
 
     public abstract void Fight();
 

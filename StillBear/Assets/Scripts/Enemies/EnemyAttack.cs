@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-     private Weapon _weapon;
+    private Weapon _weapon;
+    private Coroutine _attackCoroutine;
 
     public Weapon Weapon => _weapon;
 
@@ -14,17 +15,17 @@ public class EnemyAttack : MonoBehaviour
 
     public void StartAttacking()
     {
-        StartCoroutine(FightEveryCoolDown());
+        _attackCoroutine = StartCoroutine(FightEveryCoolDown());
     }
 
     public void StopAttacking()
     {
-        StopCoroutine(FightEveryCoolDown());
+        StopCoroutine(_attackCoroutine);
     }
 
     private IEnumerator FightEveryCoolDown()
     {
-        yield return new WaitForSeconds(_weapon.FightCooldown / 2);
+        yield return new WaitForSeconds(_weapon.FightCooldown);
         while (true)
         {
             _weapon.Fight();

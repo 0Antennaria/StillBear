@@ -5,18 +5,18 @@ public class EnemyStateMachine : MonoBehaviour
 {
     [SerializeField] private EnemyAI _enemyAI;
     [SerializeField] private EnemyAttack _enemyAttack;
+    [SerializeField] private float _stopWalking;
 
-    private IState _currentState;
-    private IState _idleEnemyState;
-    private IState _followEnemyState;
-    private IState _attackEnemyState;
+    public EnemyAI EnemyAI => _enemyAI;
+    public EnemyAttack EnemyAttack => _enemyAttack;
+    public float StopWalking => _stopWalking;
+
+    private IEnemyState _currentState;
+    private IEnemyState _idleEnemyState;
 
     private void Start()
     {
-        _idleEnemyState = new IdleEnemyState(_enemyAI);
-        _followEnemyState = new FollowEnemyState(_enemyAI);
-        _attackEnemyState = new AttackEnemyState(_enemyAI, _enemyAttack);
-
+        _idleEnemyState = new IdleEnemyState(this);
         Initialize(_idleEnemyState);
     }
 
@@ -25,53 +25,32 @@ public class EnemyStateMachine : MonoBehaviour
         _currentState.Update();
     }
 
-    private void Initialize(IState startState)
+    private void Initialize(IEnemyState startState)
     {
         _currentState = startState;
         _currentState.Enter();
     }
 
-    private void ChangeState(IState newState)
+    public void ChangeState(IEnemyState newState)
     {
-        if (newState != _currentState)
-        {
-            _currentState.Exit();
-            _currentState = newState;
-            _currentState.Enter();
-        }
+        _currentState.Exit();
+        _currentState = newState;
+        _currentState.Enter();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
-        {
-            ChangeState(_followEnemyState);
-            Debug.Log("Player!");
-        }
+        _currentState.OnTriggerEnter(other);
     }
 
     private void OnTriggerStay(Collider other)
     {
-        float distance = Vector3.Distance(transform.position, other.transform.position);
-        if (other.tag == "Player")
-        {
-            if (distance <= 2f)
-            {
-                ChangeState(_attackEnemyState);
-            }
-            else
-            {
-                ChangeState(_followEnemyState);
-            }
-        }
+        _currentState.OnTriggerStay(other);
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
-        {
-            ChangeState(_idleEnemyState);
-            Debug.Log("Player Exit");
-        }
+        _currentState.OnTriggerExit(other);
     }
+
 }
