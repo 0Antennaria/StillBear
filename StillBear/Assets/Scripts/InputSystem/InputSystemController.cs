@@ -44,6 +44,15 @@ public partial class @InputSystemController: IInputActionCollection2, IDisposabl
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Interactions"",
+                    ""type"": ""Button"",
+                    ""id"": ""2bbc8920-7d2c-4a77-a187-e67989518b74"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -112,6 +121,17 @@ public partial class @InputSystemController: IInputActionCollection2, IDisposabl
                     ""action"": ""Fight"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ce316637-730b-44da-a671-f9b3a0f5457f"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard and mouse"",
+                    ""action"": ""Interactions"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -139,6 +159,7 @@ public partial class @InputSystemController: IInputActionCollection2, IDisposabl
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Fight = m_Player.FindAction("Fight", throwIfNotFound: true);
+        m_Player_Interactions = m_Player.FindAction("Interactions", throwIfNotFound: true);
     }
 
     ~@InputSystemController()
@@ -207,12 +228,14 @@ public partial class @InputSystemController: IInputActionCollection2, IDisposabl
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Fight;
+    private readonly InputAction m_Player_Interactions;
     public struct PlayerActions
     {
         private @InputSystemController m_Wrapper;
         public PlayerActions(@InputSystemController wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Fight => m_Wrapper.m_Player_Fight;
+        public InputAction @Interactions => m_Wrapper.m_Player_Interactions;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -228,6 +251,9 @@ public partial class @InputSystemController: IInputActionCollection2, IDisposabl
             @Fight.started += instance.OnFight;
             @Fight.performed += instance.OnFight;
             @Fight.canceled += instance.OnFight;
+            @Interactions.started += instance.OnInteractions;
+            @Interactions.performed += instance.OnInteractions;
+            @Interactions.canceled += instance.OnInteractions;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -238,6 +264,9 @@ public partial class @InputSystemController: IInputActionCollection2, IDisposabl
             @Fight.started -= instance.OnFight;
             @Fight.performed -= instance.OnFight;
             @Fight.canceled -= instance.OnFight;
+            @Interactions.started -= instance.OnInteractions;
+            @Interactions.performed -= instance.OnInteractions;
+            @Interactions.canceled -= instance.OnInteractions;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -268,5 +297,6 @@ public partial class @InputSystemController: IInputActionCollection2, IDisposabl
     {
         void OnMove(InputAction.CallbackContext context);
         void OnFight(InputAction.CallbackContext context);
+        void OnInteractions(InputAction.CallbackContext context);
     }
 }
