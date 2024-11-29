@@ -3,10 +3,9 @@ using UnityEngine;
 public class PlayerMover : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed;
-    private KeyboardInputReader _reader;
 
     private Rigidbody _rigidbody;
-    private Vector3 _direction;
+    private KeyboardInputReader _reader;
 
     private void Awake()
     {
@@ -17,13 +16,8 @@ public class PlayerMover : MonoBehaviour
     private void FixedUpdate()
     {
         Vector2 playerMovementVector = _reader.KeyboardInput;
-        _direction = new Vector3(playerMovementVector.x, 0, playerMovementVector.y);
+        Vector3 moveDirection = new Vector3(playerMovementVector.x, 0, playerMovementVector.y).normalized;
 
-        Move(_direction);
-    }
-
-    private void Move(Vector3 direction)
-    {
-        _rigidbody.AddForce(direction.normalized * _moveSpeed, ForceMode.VelocityChange);
+        _rigidbody.linearVelocity = moveDirection * _moveSpeed;
     }
 }
