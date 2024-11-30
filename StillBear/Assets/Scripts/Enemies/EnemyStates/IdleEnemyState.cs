@@ -17,7 +17,6 @@ public class IdleEnemyState : IEnemyState
     {
         if (other.tag == "Player")
         {
-            _enemyStateMachine.Animator.SetBool(Keys.IsMoving, true);
             _enemyStateMachine.ChangeState(new FollowEnemyState(_enemyStateMachine));
         }
     }

@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '6000.0/staging' branch; Version is '6000.0.27f1 (27c554a2199c) revision 2606420'; Using compiler version '193933523'; Build Type 'Release'
-OS: 'Windows 10  (10.0.17763) 64bit EnterpriseS' Language: 'ru' Physical Memory: 16309 MB
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'ru' Physical Memory: 16317 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,19 +11,19 @@ C:\Program Files\Unity\Hub\Editor\6000.0.27f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/antennaria/Documents/GitHub/StillBear/StillBear
+D:/unity projects/StillBear/StillBear
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59773
+64061
 -job-worker-count
 5
 -background-job-worker-count
 8
 -asset-garbage-collectors
 1
-Successfully changed project path to: C:/Users/antennaria/Documents/GitHub/StillBear/StillBear
-C:/Users/antennaria/Documents/GitHub/StillBear/StillBear
+Successfully changed project path to: D:/unity projects/StillBear/StillBear
+D:/unity projects/StillBear/StillBear
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -59,14 +59,18 @@ C:/Users/antennaria/Documents/GitHub/StillBear/StillBear
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [12700]  Target information:
+Player connection [24352]  Target information:
 
-Player connection [12700]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3122423155 [EditorId] 3122423155 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-459Q7IS) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [24352]  * "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 928501251 [EditorId] 928501251 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-T3RO2HD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [12700]  * "[IP] 192.168.189.69 [Port] 0 [Flags] 2 [Guid] 3122423155 [EditorId] 3122423155 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-459Q7IS) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [24352]  * "[IP] 25.49.186.174 [Port] 0 [Flags] 2 [Guid] 928501251 [EditorId] 928501251 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-T3RO2HD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [12700] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [12700] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [24352]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 928501251 [EditorId] 928501251 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-T3RO2HD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [24352]  * "[IP] 172.19.0.1 [Port] 0 [Flags] 2 [Guid] 928501251 [EditorId] 928501251 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-T3RO2HD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [24352] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [24352] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -77,66 +81,61 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 3.73 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 3.44 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.27f1 (27c554a2199c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.27f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/antennaria/Documents/GitHub/StillBear/StillBear/Assets
+[Subsystems] Discovering subsystems at path D:/unity projects/StillBear/StillBear/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 780 (ID=0x1004)
-    Vendor:   NVIDIA
-    VRAM:     3029 MB
-    Driver:   30.0.14.7514
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX 580 Series (ID=0x67df)
+    Vendor:   ATI
+    VRAM:     8171 MB
+    Driver:   30.0.13023.4001
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.27f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.27f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56740
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56224
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.27f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.27f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.007220 seconds.
-- Loaded All Assemblies, in  0.580 seconds
-Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 293 ms
+Registered in 0.004470 seconds.
+- Loaded All Assemblies, in  0.747 seconds
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.871 seconds
-Domain Reload Profiling: 1448ms
-	BeginReloadAssembly (186ms)
+- Finished resetting the current domain, in  0.594 seconds
+Domain Reload Profiling: 1336ms
+	BeginReloadAssembly (299ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (56ms)
-	RebuildNativeTypeToScriptingClass (22ms)
-	initialDomainReloadingComplete (80ms)
-	LoadAllAssembliesAndSetupDomain (232ms)
-		LoadAssemblies (183ms)
+	RebuildCommonClasses (72ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (85ms)
+	LoadAllAssembliesAndSetupDomain (265ms)
+		LoadAssemblies (292ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (227ms)
-			TypeCache.Refresh (225ms)
-				TypeCache.ScanAssembly (208ms)
+		AnalyzeDomain (260ms)
+			TypeCache.Refresh (258ms)
+				TypeCache.ScanAssembly (240ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (871ms)
+	FinalizeReload (595ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (820ms)
+		SetupLoadedEditorAssemblies (523ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (424ms)
+			InitializePlatformSupportModulesInManaged (39ms)
 			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (9ms)
-			ProcessInitializeOnLoadAttributes (258ms)
-			ProcessInitializeOnLoadMethodAttributes (119ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			BeforeProcessingInitializeOnLoad (11ms)
+			ProcessInitializeOnLoadAttributes (346ms)
+			ProcessInitializeOnLoadMethodAttributes (117ms)
+			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
@@ -147,275 +146,305 @@ Import Worker Mode flag is 0x00
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.484 seconds
+- Loaded All Assemblies, in  2.145 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 2.12 ms, found 4 plugins.
-Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 2.00 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.405 seconds
-Domain Reload Profiling: 2883ms
-	BeginReloadAssembly (564ms)
+- Finished resetting the current domain, in  1.852 seconds
+Domain Reload Profiling: 3991ms
+	BeginReloadAssembly (748ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (41ms)
-	RebuildCommonClasses (54ms)
+		CreateAndSetChildDomain (51ms)
+	RebuildCommonClasses (57ms)
 	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (68ms)
-	LoadAllAssembliesAndSetupDomain (772ms)
-		LoadAssemblies (487ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (1256ms)
+		LoadAssemblies (733ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (426ms)
-			TypeCache.Refresh (285ms)
-				TypeCache.ScanAssembly (263ms)
-			BuildScriptInfoCaches (127ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (1406ms)
+		AnalyzeDomain (686ms)
+			TypeCache.Refresh (497ms)
+				TypeCache.ScanAssembly (467ms)
+			BuildScriptInfoCaches (167ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1853ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1086ms)
+		SetupLoadedEditorAssemblies (1451ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
-			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (112ms)
-			ProcessInitializeOnLoadAttributes (843ms)
-			ProcessInitializeOnLoadMethodAttributes (90ms)
-			AfterProcessingInitializeOnLoad (14ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (120ms)
+			ProcessInitializeOnLoadAttributes (1175ms)
+			ProcessInitializeOnLoadMethodAttributes (129ms)
+			AfterProcessingInitializeOnLoad (15ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 2.34 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.90 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 119 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6636 unused Assets / (7.9 MB). Loaded Objects now: 7278.
-Memory consumption went from 180.4 MB to 172.5 MB.
-Total: 14.801600 ms (FindLiveObjects: 0.957300 ms CreateObjectMapping: 0.515000 ms MarkObjects: 7.891600 ms  DeleteObjects: 5.434500 ms)
+Unloading 6638 unused Assets / (7.6 MB). Loaded Objects now: 7252.
+Memory consumption went from 167.4 MB to 159.9 MB.
+Total: 22.237900 ms (FindLiveObjects: 1.244100 ms CreateObjectMapping: 2.178300 ms MarkObjects: 11.977200 ms  DeleteObjects: 6.833700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 27129.774897 seconds.
-  path: Assets/Animations/Player
-  artifactKey: Guid(89e6d24f3630ad54894052cf2d927726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Player using Guid(89e6d24f3630ad54894052cf2d927726) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0e82a16e0264ea956d875e4f6d5637c3') in 0.0079705 seconds
+  Time since last request: 32093.440621 seconds.
+  path: Assets/Scripts/FlipObjects/PlayerFlipper.cs
+  artifactKey: Guid(58515acc2f3fa414bab310c24eb1a161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FlipObjects/PlayerFlipper.cs using Guid(58515acc2f3fa414bab310c24eb1a161) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c8d85df359c6798d502950afb9402c8a') in 0.0066966 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.553500 seconds.
-  path: Assets/Animations/Run.anim
-  artifactKey: Guid(456d657b15a6a6c4ab4b4ade9202c20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Run.anim using Guid(456d657b15a6a6c4ab4b4ade9202c20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '601acf8167fa96b51ac349c7c8accdf3') in 0.0237218 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.169 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 1.89 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.671 seconds
+Domain Reload Profiling: 2838ms
+	BeginReloadAssembly (324ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (24ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (83ms)
+	RebuildCommonClasses (68ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (700ms)
+		LoadAssemblies (523ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (339ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (306ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (1672ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1310ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (129ms)
+			ProcessInitializeOnLoadAttributes (1057ms)
+			ProcessInitializeOnLoadMethodAttributes (95ms)
+			AfterProcessingInitializeOnLoad (17ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 2.81 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 41 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6636 unused Assets / (6.5 MB). Loaded Objects now: 7257.
+Memory consumption went from 152.1 MB to 145.5 MB.
+Total: 17.048000 ms (FindLiveObjects: 1.418400 ms CreateObjectMapping: 1.582300 ms MarkObjects: 10.492200 ms  DeleteObjects: 3.552600 ms)
 
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.031 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 2.46 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.443 seconds
+Domain Reload Profiling: 2471ms
+	BeginReloadAssembly (283ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (64ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (636ms)
+		LoadAssemblies (480ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (302ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (276ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1444ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1120ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (93ms)
+			ProcessInitializeOnLoadAttributes (924ms)
+			ProcessInitializeOnLoadMethodAttributes (81ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 2.00 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 41 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6636 unused Assets / (7.1 MB). Loaded Objects now: 7259.
+Memory consumption went from 152.1 MB to 145.0 MB.
+Total: 12.070500 ms (FindLiveObjects: 0.927000 ms CreateObjectMapping: 0.384300 ms MarkObjects: 6.973500 ms  DeleteObjects: 3.783700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.416333 seconds.
-  path: Assets/Animations/Idle.anim
-  artifactKey: Guid(0a0aaa62d9bed174cb09d59443690a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Idle.anim using Guid(0a0aaa62d9bed174cb09d59443690a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '393dfb622a346b51587769d6728234cf') in 0.0019211 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.746357 seconds.
-  path: Assets/omiStudio
-  artifactKey: Guid(83b8c8853e71cfa4ca88100f7f0e634a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/omiStudio using Guid(83b8c8853e71cfa4ca88100f7f0e634a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cb0f83294775683fb6638da2549fc1f5') in 0.0006843 seconds
+  Time since last request: 159.952471 seconds.
+  path: Assets/Scripts/FlipObjects/PlayerFlipper.cs
+  artifactKey: Guid(58515acc2f3fa414bab310c24eb1a161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FlipObjects/PlayerFlipper.cs using Guid(58515acc2f3fa414bab310c24eb1a161) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bc920ff09801719fabd772d299d4c202') in 0.0017776 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.814665 seconds.
-  path: Assets/omiStudio/Enemy Cow
-  artifactKey: Guid(d4326efcb3e9d65468163c7b92de464b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/omiStudio/Enemy Cow using Guid(d4326efcb3e9d65468163c7b92de464b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '218657579a14e8c146c0a2ff480cb75b') in 0.0006443 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.101 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 2.79 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.394 seconds
+Domain Reload Profiling: 2494ms
+	BeginReloadAssembly (305ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (76ms)
+	RebuildCommonClasses (56ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (679ms)
+		LoadAssemblies (504ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (328ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (299ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1395ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1073ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (99ms)
+			ProcessInitializeOnLoadAttributes (873ms)
+			ProcessInitializeOnLoadMethodAttributes (79ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 2.10 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 41 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6636 unused Assets / (6.9 MB). Loaded Objects now: 7261.
+Memory consumption went from 152.1 MB to 145.2 MB.
+Total: 13.280700 ms (FindLiveObjects: 1.130000 ms CreateObjectMapping: 1.307300 ms MarkObjects: 7.446100 ms  DeleteObjects: 3.395400 ms)
 
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time since last request: 9.966435 seconds.
-  path: Assets/Scripts/FlipObjects
-  artifactKey: Guid(0438017de9b7e4b4ea1b62d318115e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/FlipObjects using Guid(0438017de9b7e4b4ea1b62d318115e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '49573aa869f759b0b808895642adf791') in 0.0006077 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.091 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 1.88 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.645 seconds
+Domain Reload Profiling: 2733ms
+	BeginReloadAssembly (294ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (68ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (674ms)
+		LoadAssemblies (489ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (339ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (307ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (1646ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1277ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (107ms)
+			ProcessInitializeOnLoadAttributes (1046ms)
+			ProcessInitializeOnLoadMethodAttributes (99ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 3.01 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 41 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6636 unused Assets / (7.6 MB). Loaded Objects now: 7263.
+Memory consumption went from 152.1 MB to 144.4 MB.
+Total: 19.943200 ms (FindLiveObjects: 1.492300 ms CreateObjectMapping: 1.613700 ms MarkObjects: 10.329000 ms  DeleteObjects: 6.506200 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 1.349418 seconds.
-  path: Assets/Scripts/AttackDirection
-  artifactKey: Guid(fedfd48f785d3d84f866f1f1487c6f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AttackDirection using Guid(fedfd48f785d3d84f866f1f1487c6f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f9e2c231954740f707e91df34749fd2') in 0.0007982 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.898703 seconds.
-  path: Assets/omiStudio/Enemy Cow/Art
-  artifactKey: Guid(51b9065b33d66cd41a89e6c10d682964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/omiStudio/Enemy Cow/Art using Guid(51b9065b33d66cd41a89e6c10d682964) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1301adac20e2719d45bd92364b90b8b9') in 0.0007068 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.890746 seconds.
-  path: Assets/omiStudio/Enemy Cow/Art/Sprits
-  artifactKey: Guid(bc5ca088bace19443a5b7d71d3033bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/omiStudio/Enemy Cow/Art/Sprits using Guid(bc5ca088bace19443a5b7d71d3033bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '03db62f94212e160969c741dbf98bef3') in 0.0007707 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.445987 seconds.
-  path: Assets/omiStudio/Enemy Cow/Art/Sprits/Cow
-  artifactKey: Guid(ac45fd24cb3d2aa4894cc74b8bfb934d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/omiStudio/Enemy Cow/Art/Sprits/Cow using Guid(ac45fd24cb3d2aa4894cc74b8bfb934d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a76a2fa7d44fb9a6181dd5ab708ad4d6') in 0.0005706 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.086747 seconds.
-  path: Assets/omiStudio/Enemy Cow/Art/Sprits/Cow/Cow1.psb
-  artifactKey: Guid(8a96f944a0bc71742b44c9ef2eb6a03a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/omiStudio/Enemy Cow/Art/Sprits/Cow/Cow1.psb using Guid(8a96f944a0bc71742b44c9ef2eb6a03a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '78de41899c5b09e6156373907cb29ad7') in 0.2976753 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 113
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.236335 seconds.
-  path: Assets/omiStudio/Enemy Cow/Art/Animations
-  artifactKey: Guid(35dd4870d6c7a4347826647278073dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/omiStudio/Enemy Cow/Art/Animations using Guid(35dd4870d6c7a4347826647278073dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8ec06468c306f8ff733d326ba08e941c') in 0.0006888 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.588296 seconds.
-  path: Assets/omiStudio/Enemy Cow/Art/Animations/Cow
-  artifactKey: Guid(750465bfd59012947afdfc74d6ccd0a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/omiStudio/Enemy Cow/Art/Animations/Cow using Guid(750465bfd59012947afdfc74d6ccd0a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '313c8191e8f342b6d75fadb6eb37676a') in 0.0007162 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.653255 seconds.
-  path: Assets/omiStudio/Enemy Cow/Art/Animations/Cow/Cow1
-  artifactKey: Guid(5fa02f6f4df4afd43882ca66cca87f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/omiStudio/Enemy Cow/Art/Animations/Cow/Cow1 using Guid(5fa02f6f4df4afd43882ca66cca87f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '08cd9e3fe32fbf12aa52b142ad1c8854') in 0.0006417 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.866736 seconds.
-  path: Assets/omiStudio/Enemy Cow/Art/Animations/Cow/Cow1/Idle.anim
-  artifactKey: Guid(b5f4050aaa5d76248aa1ad9549b3f4a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/omiStudio/Enemy Cow/Art/Animations/Cow/Cow1/Idle.anim using Guid(b5f4050aaa5d76248aa1ad9549b3f4a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f9dbdb18c3c9ee22ad4bab98581ad717') in 0.0021687 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.720753 seconds.
-  path: Assets/omiStudio/Enemy Cow/Art/Animations/Cow/Cow1/Run.anim
-  artifactKey: Guid(2bdeac0299afda645a673b4ecfb81729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/omiStudio/Enemy Cow/Art/Animations/Cow/Cow1/Run.anim using Guid(2bdeac0299afda645a673b4ecfb81729) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c96aa3ecff5cbddfbd5332403f633606') in 0.0021167 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.379823 seconds.
-  path: Assets/omiStudio/Enemy Cow/Art/Animations/Cow/Cow1/AnimationCow1.controller
-  artifactKey: Guid(fdd9a0452cdbc9a48a3578b5279e047b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/omiStudio/Enemy Cow/Art/Animations/Cow/Cow1/AnimationCow1.controller using Guid(fdd9a0452cdbc9a48a3578b5279e047b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8b548ec10f89ef7f47a3e7c51e56c931') in 0.0058072 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.535505 seconds.
-  path: Assets/omiStudio/Enemy Cow/Art/Animations/Cow/Cow1/Walk.anim
-  artifactKey: Guid(88e4490d94ce5bc4883d9cd0685863a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/omiStudio/Enemy Cow/Art/Animations/Cow/Cow1/Walk.anim using Guid(88e4490d94ce5bc4883d9cd0685863a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '577475e72a8d107dd320d9191d6dece2') in 0.0022307 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.291227 seconds.
-  path: Assets/omiStudio/Enemy Cow/Documentation
-  artifactKey: Guid(0cefba64301b7f44abc10198229a3792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/omiStudio/Enemy Cow/Documentation using Guid(0cefba64301b7f44abc10198229a3792) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4a3d8f582b89974bb78b7b08a7b5a79d') in 0.0007272 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.610844 seconds.
-  path: Assets/omiStudio/Enemy Cow/Prefabs
-  artifactKey: Guid(02b9d2f8085f5534a81b00192dce3ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/omiStudio/Enemy Cow/Prefabs using Guid(02b9d2f8085f5534a81b00192dce3ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'da2e231da35e2bc5f7150c5641d6b240') in 0.0008107 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.071393 seconds.
-  path: Assets/omiStudio/Enemy Cow/Prefabs/Cow1.prefab
-  artifactKey: Guid(b1611cd253cbb524cbfb6ab6dc2dc87e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/omiStudio/Enemy Cow/Prefabs/Cow1.prefab using Guid(b1611cd253cbb524cbfb6ab6dc2dc87e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '853d912b4243d85304992d31530d7c12') in 0.0666658 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 252
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.325698 seconds.
-  path: Assets/omiStudio/Enemy Cow/Scenes
-  artifactKey: Guid(71d7cc9f78d15df4fb21be0d6ba00f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/omiStudio/Enemy Cow/Scenes using Guid(71d7cc9f78d15df4fb21be0d6ba00f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dbcce6e017b21875e79511822f3ca339') in 0.0007249 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.828276 seconds.
-  path: Assets/omiStudio/Enemy Cow/Scripts
-  artifactKey: Guid(5d0904adce151664f81999bea2237ec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/omiStudio/Enemy Cow/Scripts using Guid(5d0904adce151664f81999bea2237ec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f316e2dcf02f79b29a88ca6e5d50b330') in 0.0006791 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.390024 seconds.
-  path: Assets/omiStudio/Enemy Cow/Scripts/SetStateAnimation.cs
-  artifactKey: Guid(7cd76c7f592486c488aeeb01a3ca6782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/omiStudio/Enemy Cow/Scripts/SetStateAnimation.cs using Guid(7cd76c7f592486c488aeeb01a3ca6782) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eee26691111bab8dd5ee28a19bb5fbd4') in 0.0006864 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 180.410416 seconds.
-  path: Assets/omiStudio/Enemy Cow/Prefabs/Cow1.prefab
-  artifactKey: Guid(b1611cd253cbb524cbfb6ab6dc2dc87e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/omiStudio/Enemy Cow/Prefabs/Cow1.prefab using Guid(b1611cd253cbb524cbfb6ab6dc2dc87e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8400d62148fcf862ba0a7c40b96b090d') in 0.0253656 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 252
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.362552 seconds.
-  path: Assets/Animations/Cow
-  artifactKey: Guid(5fa02f6f4df4afd43882ca66cca87f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Cow using Guid(5fa02f6f4df4afd43882ca66cca87f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3f22d7e0e1cd4dc45b916910435136ef') in 0.0008439 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 74.378337 seconds.
-  path: Assets/Animations/Cow/Attack.anim
-  artifactKey: Guid(7541a44c621e9584bafad79f855b3421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Cow/Attack.anim using Guid(7541a44c621e9584bafad79f855b3421) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8161b032b27f92bf159d149148330555') in 0.0012841 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
+Prepare: number of updated asset objects reloaded= 0

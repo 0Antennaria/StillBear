@@ -10,12 +10,14 @@ public class AttackEnemyState : IEnemyState
     }
     public void Enter() 
     {
+        _enemyStateMachine.Animator.SetBool(Keys.IsAttack, true);
         _enemyStateMachine.EnemyAI.Stop();
         _enemyStateMachine.EnemyAttack.StartAttacking();
     }
 
     public void Exit() 
     {
+        _enemyStateMachine.Animator.SetBool(Keys.IsAttack, false);
         _enemyStateMachine.EnemyAttack.StopAttacking();
     }
 
@@ -29,7 +31,6 @@ public class AttackEnemyState : IEnemyState
         float distance = Vector3.Distance(_enemyStateMachine.transform.position, other.transform.position);
         if (other.tag == "Player" && distance > _enemyStateMachine.StopWalking)
         {
-            _enemyStateMachine.Animator.SetBool(Keys.IsMoving, true);
             _enemyStateMachine.ChangeState(new FollowEnemyState(_enemyStateMachine));
         }
     }

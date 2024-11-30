@@ -20,7 +20,6 @@ public class FollowEnemyState : IEnemyState
         float distance = Vector3.Distance(_enemyStateMachine.transform.position, other.transform.position);
         if (other.tag == "Player" && distance <= _enemyStateMachine.StopWalking)
         {
-            _enemyStateMachine.Animator.SetBool(Keys.IsMoving, false);
             _enemyStateMachine.ChangeState(new AttackEnemyState(_enemyStateMachine));
         }
     }
@@ -31,12 +30,17 @@ public class FollowEnemyState : IEnemyState
     {
         if (other.tag == "Player")
         {
-            _enemyStateMachine.Animator.SetBool(Keys.IsMoving, false);
             _enemyStateMachine.ChangeState(new IdleEnemyState(_enemyStateMachine));
         }
     }
     public void FixedUpdate() {}
-    public void Enter() {}
+    public void Enter() 
+    {
+        _enemyStateMachine.Animator.SetBool(Keys.IsMoving, true);
+    }
 
-    public void Exit() {}
+    public void Exit() 
+    {
+        _enemyStateMachine.Animator.SetBool(Keys.IsMoving, false);
+    }
 }

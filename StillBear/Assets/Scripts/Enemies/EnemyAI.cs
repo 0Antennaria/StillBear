@@ -4,7 +4,6 @@ using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
     [SerializeField] private Transform _player;
-    [SerializeField] private GameObject _enemyObject;
     private NavMeshAgent _agent;
 
     private void Awake()
