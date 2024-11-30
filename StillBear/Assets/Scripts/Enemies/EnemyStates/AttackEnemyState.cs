@@ -29,6 +29,7 @@ public class AttackEnemyState : IEnemyState
         float distance = Vector3.Distance(_enemyStateMachine.transform.position, other.transform.position);
         if (other.tag == "Player" && distance > _enemyStateMachine.StopWalking)
         {
+            _enemyStateMachine.Animator.SetBool(Keys.IsMoving, true);
             _enemyStateMachine.ChangeState(new FollowEnemyState(_enemyStateMachine));
         }
     }

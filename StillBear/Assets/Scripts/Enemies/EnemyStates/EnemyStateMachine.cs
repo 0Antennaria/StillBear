@@ -6,7 +6,9 @@ public class EnemyStateMachine : MonoBehaviour
     [SerializeField] private EnemyAI _enemyAI;
     [SerializeField] private EnemyAttack _enemyAttack;
     [SerializeField] private float _stopWalking;
+    [SerializeField] private Animator _animator;
 
+    public Animator Animator => _animator;
     public EnemyAI EnemyAI => _enemyAI;
     public EnemyAttack EnemyAttack => _enemyAttack;
     public float StopWalking => _stopWalking;
