@@ -7,6 +7,7 @@ public class StateMachine : MonoBehaviour
 
     public IdleState IdleState { get; private set; }
     public RunState RunState { get; private set; }
+    public FightState FightState { get; private set; }
 
     public Animator Animator { get; private set; }
 
@@ -16,6 +17,7 @@ public class StateMachine : MonoBehaviour
     {
         IdleState = new IdleState(this);
         RunState = new RunState(this);
+        FightState = new FightState(this);
 
         Animator = GetComponent<Animator>();
 

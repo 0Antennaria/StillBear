@@ -22,5 +22,7 @@ public class RunState : IState
     {
         if (_stateMachine.Reader.KeyboardInput == Vector2.zero)
             _stateMachine.ChangeState(_stateMachine.IdleState);
+        if (Input.GetMouseButtonDown(0))
+            _stateMachine.ChangeState(_stateMachine.FightState);
     }
 }
