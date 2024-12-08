@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class ApairModel : Model
 {
-    protected int profitLevel = 0;
+    [SerializeField] private BeeHouse _house;
     public ApairModel(View view) : base(view)
     {
     }
-    public void UpgradeApairProfit()
-    { 
-        ++profitLevel;
-        _view.DisplayProfitLevel(profitLevel);
+    
+    public void ChangeBeeQueen(BeeQueen newQueen, BeeHouse house)
+    {
+        _house = house;
+        _house.OnQueenChange(newQueen);
     }
 }

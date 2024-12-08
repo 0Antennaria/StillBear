@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class Controller
+public abstract class Controller : MonoBehaviour 
 {
     protected View _view;
     protected ApairModel _model;
@@ -10,17 +10,8 @@ public abstract class Controller
         _model = model;
     }
 
-    public void Upgrade()
-    {
-        int typeOfUpgrade = DetermineTypeOfUpgrade();
-        switch (typeOfUpgrade)
-        {
-            case 0:
-                _model.UpgradeApairProfit();
-                break;
-        }
-    }
-    protected abstract int DetermineTypeOfUpgrade();
 }
+
+
 
 
