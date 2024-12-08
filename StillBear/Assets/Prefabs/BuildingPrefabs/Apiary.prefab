@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 363171499321712839}
   - component: {fileID: 4822079460688685273}
+  - component: {fileID: 3326104000463369323}
   m_Layer: 0
   m_Name: Apiary
   m_TagString: Untagged
@@ -46,6 +47,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Size: {x: 1, y: 1}
+  BuildingCost: 10
+--- !u!114 &3326104000463369323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4405026763363515785}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c543d848cf78db743a6c7d0252ff38ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4694108310752827800
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,6 +3,7 @@ using UnityEngine;
 public class Building : MonoBehaviour
 {
     public Vector2Int Size = Vector2Int.one;
+    public int BuildingCost;
 
     private void OnDrawGizmosSelected()
     {

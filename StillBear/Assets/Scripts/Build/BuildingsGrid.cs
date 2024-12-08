@@ -5,6 +5,8 @@ public class BuildingsGrid : MonoBehaviour
     public Vector2Int GridSize = new Vector2Int(10, 10);
     public Vector3 GridOffset = Vector3.zero;
 
+    [SerializeField] private Honey _honey;
+    
     private Building[,] _grid;
     private Building _flyingBuilding;
     private Camera _mainCamera;
@@ -23,7 +25,10 @@ public class BuildingsGrid : MonoBehaviour
             Destroy(_flyingBuilding);
         }
 
-        _flyingBuilding = Instantiate(buildingPrefab);
+        if (_honey.HoneyCount - buildingPrefab.BuildingCost >= 0)
+        {
+            _flyingBuilding = Instantiate(buildingPrefab);
+        }
     }
 
     private void Update()
@@ -40,52 +45,18 @@ public class BuildingsGrid : MonoBehaviour
                 int x = Mathf.RoundToInt(worldPosition.x);
                 int y = Mathf.RoundToInt(worldPosition.z);
 
-                bool avaliable = true;
-
-                if(x < 0 || x > GridSize.x - _flyingBuilding.Size.x)
-                    avaliable = false;
-
-                if (y < 0 || y > GridSize.y - _flyingBuilding.Size.y)
-                    avaliable = false;
-
-                if (avaliable && IsPlaceTaken(x, y)) 
-                    avaliable = false;
-
                 _flyingBuilding.transform.position = new Vector3(x, 0, y) + GridOffset;
 
-                if (avaliable && Input.GetMouseButtonDown(0)) 
+                if (Input.GetMouseButtonDown(0)) 
                 {
-                    PlaceFlyingBuilding(x, y);
+                    _honey.ChangeHoney(-1 * _flyingBuilding.BuildingCost);
+                    _flyingBuilding.GetComponent<Apairy>().enabled = true;
+                    _flyingBuilding = null;
                 }
             }
         }
     }
 
-    private bool IsPlaceTaken(int placeX, int placeY)
-    {
-        for (int x = 0; x < _flyingBuilding.Size.x; x++)
-        {
-            for (int y = 0; y < _flyingBuilding.Size.y; y++)
-            {
-                if(_grid[placeX + x, placeY + y] != null)
-                    return true;
-            }
-        }
-        return false;
-    }
-
-    private void PlaceFlyingBuilding(int placeX, int placeY)
-    {
-        for (int x = 0; x < _flyingBuilding.Size.x; x++)
-        {
-            for (int y = 0; y < _flyingBuilding.Size.y; y++)
-            {
-                _grid[placeX + x, placeY + y] = _flyingBuilding;
-            }
-        }
-
-        _flyingBuilding = null;
-    }
 
     private void OnDrawGizmosSelected()
     {
