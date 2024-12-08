@@ -7,6 +7,7 @@ public class Quest : MonoBehaviour
 {
     private int _numOfEnemies;
     private List<EnemyHealth> _enemies = new List<EnemyHealth>();
+    private SceneLoader _sceneLoader;
 
     public int NumOfEnemies => _numOfEnemies;
 
@@ -15,6 +16,7 @@ public class Quest : MonoBehaviour
     private void Awake()
     {
         EnemyHealth[] enemies = FindObjectsOfType<EnemyHealth>();
+        _sceneLoader = new SceneLoader();
 
         foreach (var enemy in enemies)
         {
@@ -31,7 +33,10 @@ public class Quest : MonoBehaviour
         _numOfEnemies -= 1;
         OnNumEnemiesChange?.Invoke();
 
-        Debug.Log(_numOfEnemies);
+        if(_numOfEnemies == 0)
+        {
+            _sceneLoader.LoadSceneByIndex(1);
+        }
     }
 
     private void OnDestroy()

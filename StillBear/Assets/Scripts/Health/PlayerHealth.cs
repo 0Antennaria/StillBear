@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class PlayerHealth : BaseHealth
 {
+    private SceneLoader _sceneLoader = new SceneLoader();
+
     public override void Die()
     {
-        Debug.Log("Bear dead :(");
+        _sceneLoader.LoadSceneByIndex(1);
     }
 }
