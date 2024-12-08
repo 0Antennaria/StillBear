@@ -9,6 +9,10 @@ public abstract class BaseHealth : MonoBehaviour
     public float Health => _health;
     public float MaxHealth => _maxHealth;
 
+    public event Action OnDie;
+    public event Action OnTakeDamage;
+    public event Action OnHealTaken;
+
     public void Start()
     {
         _health = _maxHealth;
@@ -28,6 +32,7 @@ public abstract class BaseHealth : MonoBehaviour
         }
 
         _health = newHealth;
+        OnTakeDamage?.Invoke();
     }
 
     public void Heal(float heal)
@@ -44,7 +49,13 @@ public abstract class BaseHealth : MonoBehaviour
         }
 
         _health = newHealth;
+        OnHealTaken?.Invoke();
     }
 
     public abstract void Die();
+
+    protected void TriggerDie()
+    {
+        OnDie?.Invoke();
+    }
 }
